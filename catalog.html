@@ -25,12 +25,109 @@
         </ul>
       </nav>
       <div class="logo">
-        <a href="index.html"> <img src="img/logo-mini.png" width="140" height="71" alt="Логотип Седоны"></a> 
+        <a href="index.html"> <img src="img/logo-mini.svg" width="140" height="71" alt="Логотип Седоны"></a> 
       </div>
     </header>
 
   <main>
-   
+         <section class="options-form">
+        <form action="results.html" method="post">
+          <div class="infrastructure">
+            <h2>Инфраструктура:</h2>
+            <ul>
+              <li>
+                <input type="checkbox" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" id="wifi">
+                <label for="wifi">WI-FI</label>
+              </li>
+            </ul>
+          </div>
+          <div class="house-type">
+            <h2>Тип жилья:</h2>
+            <ul>
+              <li>
+                <input type="checkbox" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" id="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" id="aps" checked>
+                <label for="aps">Апартаменты</label>
+              </li>
+            </ul>
+          </div>
+          <div class="price">
+            <h2>Стоимость в сутки (р):</h2>
+            <div class="price-range">
+              <div class="price-from">
+                <label for="price-from">От</label>
+                <input type="text" id="price-from" value="0">
+              </div>
+              <div class="price-to">
+                <label for="price-to">До</label>
+                <input type="text" id="price-to" value="3000">
+              </div>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min">
+                <img src="img/filter-button.svg" width="20" height="22" alt="вверх">
+              </div>
+              <div class="range-toggle range-toggle-max">
+                <img src="img/filter-button.svg" width="20" height="22" alt="вверх">
+              </div>
+            </div>
+            <input type="submit" class="show-btn" value="Показать">
+          </div>
+        </form>
+      </section>
+
+      <section class="result">
+        <div class="amount-found">
+          <h3>Найдено: 3</h3>
+        </div>
+        <div class="result-sort">
+          <span>Сортировка:</span>
+          <ul>
+            <li class="active-sort">
+              <a href="#">
+                По цене
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                По типу
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                По рейтингу
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="up-down-sort">
+          <a href="#">
+            <img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх">
+          </a>
+          <a class="active-up-dwn" href="#">
+            <img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз">
+          </a>
+        </div>
+      </section>
+
     <h1 class="visually-hidden">Католог гостиниц города Седона</h1>
     
     <article class="result-item">
