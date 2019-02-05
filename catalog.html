@@ -4,23 +4,24 @@
 	<meta charset="utf-8">
 	<title>Макет HTML Academy "Седона"</title>
 	<link href="css/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 	<header class="main-header">
 		<nav class="main-nav">
 			<ul class="main-nav-list">
-				<li>
-					<a href="index.html">ИНФОРМАЦИЯ</a>
+				<li class="main-nav-list-mini">
+					<span>ИНФОРМАЦИЯ</span>
 				</li>
-				<li>
+				<li class="main-nav-list-mini">
 					<a href="#">ФОТО И ВИДЕО</a>
 				</li>
-				<li>
+				<li class="main-nav-list-mini">
 					<a href="#">КАРТА ШТАТА</a>
 				</li>
 				<li class="active">
-					<a href="hotels.html">ГОСТИНИЦЫ</a>
+					<a href="#">ГОСТИНИЦЫ</a>
 				</li>
 			</ul>
 		</nav>
@@ -37,15 +38,15 @@
 					<h2>Инфраструктура:</h2>
 					<ul>
 						<li>
-							<input type="checkbox" id="pool" checked>
+							<input type="checkbox" id="pool" name="pool" checked>
 							<label for="pool">Бассейн</label>
 						</li>
 						<li>
-							<input type="checkbox" id="parking">
+							<input type="checkbox" id="parking" name="parking">
 							<label for="parking">Парковка</label>
 						</li>
 						<li>
-							<input type="checkbox" id="wifi">
+							<input type="checkbox" id="wi-fi" name="wi-fi">
 							<label for="wifi">WI-FI</label>
 						</li>
 					</ul>
@@ -54,15 +55,15 @@
 					<h2>Тип жилья:</h2>
 					<ul>
 						<li>
-							<input type="checkbox" id="hotel" checked>
+							<input type="checkbox" id="hotel" name="hotel" checked>
 							<label for="hotel">Гостиница</label>
 						</li>
 						<li>
-							<input type="checkbox" id="motel" checked>
+							<input type="checkbox" id="motel" name="motel" checked>
 							<label for="motel">Мотель</label>
 						</li>
 						<li>
-							<input type="checkbox" id="aps" checked>
+							<input type="checkbox" id="aps" name="apartaments" checked>
 							<label for="aps">Апартаменты</label>
 						</li>
 					</ul>
@@ -72,11 +73,11 @@
 					<div class="price-range">
 						<div class="price-from">
 							<label for="price-from">От</label>
-							<input type="text" id="price-from" value="0">
+							<input type="text" id="price-from" name="cost-min" value="0">
 						</div>
 						<div class="price-to">
 							<label for="price-to">До</label>
-							<input type="text" id="price-to" value="3000">
+							<input type="text" id="price-to" name="cost-max" value="3000">
 						</div>
 					</div>
 					<div class="range-controls">
@@ -84,13 +85,13 @@
 							<div class="bar"></div>
 						</div>
 						<div class="range-toggle range-toggle-min">
-							<img src="img/filter-button.svg" width="20" height="22" alt="min">
+							<img src="img/filter-button.svg" width="20" height="22" alt="от">
 						</div>
 						<div class="range-toggle range-toggle-max">
-							<img src="img/filter-button.svg" width="20" height="22" alt="max">
+							<img src="img/filter-button.svg" width="20" height="22" alt="до">
 						</div>
 					</div>
-					<input type="submit" class="show-btn" value="Показать">
+					<button class="submit-button" type="submit">Показать</button>
 				</div>
 
 			</form>
@@ -108,10 +109,10 @@
 					<li class="active-sort">
 						<a href="#">По цене</a>
 					</li>
-					<li>
+					<li class="active-sort">
 						<a href="#">По типу</a>
 					</li>
-					<li>
+					<li class="active-sort">
 						<a href="#">По рейтингу</a>
 					</li>
 				</ul>
@@ -131,7 +132,7 @@
 		
 		<article class="result-item">
 			<div class="result-img">
-				<img src="img/Amara.jpg" width="135" height="90" alt="Фотография Amara">
+				<img src="img/Amara.jpg" width="135" height="90" alt="Фотография Амара">
 			</div>
 			<div class="result-info">
 				<h2><a href="#">AMORA RESORT & SPA</a></h2>
@@ -157,7 +158,7 @@
 
 		<article class="result-item">
 			<div class="result-img">
-				<img src="img/Desert.jpg" width="135" height="90" alt="Фотография Desert">
+				<img src="img/Desert.jpg" width="135" height="90" alt="Фотография Десерт">
 			</div>
 			<div class="result-info">
 				<h2><a href="#">DESERT QUAIL INN</a></h2>
@@ -182,7 +183,7 @@
 
 		<article class="result-item">
 			<div class="result-img">
-				<img src="img/Villas.jpg" width="135" height="90" alt="Фотография Villas">
+				<img src="img/Villas.jpg" width="135" height="90" alt="Фотография Виллас">
 			</div>
 			<div class="result-info">
 				<h2><a href="#">VILLAS AT POCO DIABLO</a></h2>
@@ -215,17 +216,17 @@
 			<ul>
 				<li class="soc-tw">
 					<a class="soc" href="#">
-						<img src="img/twitter.svg" width="18" height="17" alt="icon-twitter">
+						<img src="img/twitter.svg" width="18" height="17" alt="Иконка твиттера">
 					</a>
 				</li>
 				<li class="soc-fb">
 					<a class="soc" href="#">
-						<img src="img/fb-icon.svg" width="18" height="17" alt="icon-facebook">
+						<img src="img/fb-icon.svg" width="18" height="17" alt="Иконка фейсбука">
 					</a>
 				</li>
 				<li class="soc-in">
 					<a class="soc" href="#">
-						<img src="img/youtube.svg" width="18" height="17" alt="icon-youtube">
+						<img src="img/youtube.svg" width="18" height="17" alt="Иконка ютуба">
 					</a>
 				</li>
 			</ul>
