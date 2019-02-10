@@ -1,13 +1,14 @@
 body {
 	position: relative;
 	margin: 0;
-	padding: 0 40px;
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 26px;
 	color: #333333;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
+	background-position: top center;
+    background-repeat: no-repeat;
 }
 
 a {
@@ -20,7 +21,7 @@ img {
 }
 
 .calendar{
-	background-image: url(img/calendar.svg) no-repeat 50% 50%;  
+	background-image: url('img/calendar.svg') no-repeat 50% 50%;  
 }
 
 ul {
@@ -41,6 +42,7 @@ h2 {
 .main-nav a {
   color: #000000;
 }
+
 .main-nav a:hover,
 .main-nav a:focus {
   color: #81b3d2;
@@ -70,9 +72,12 @@ h2 {
   background-color: #ffffff;
   color: #333333;
 }
+
 .feature-text {
   font-size: 21px;
   font-weight: bold;
+  background-color: #81b3d2;
+  color: #ffffff;
 }
 
 .map {
@@ -88,12 +93,13 @@ h2 {
   line-height: 26px;
   font-weight: bold;
 }
+
 .share ul {
   list-style: none;
 }
 
 .header-background {
-  background: #c0d6e4 url("../img/background-photo.png") no-repeat center;
+  background: #c0d6e4 url('../img/background-photo.png') no-repeat center;
   width: 100%;
   height: 788px;
   background-size: cover;
@@ -104,4 +110,29 @@ h2 {
   left: 50%;
   z-index: 2;
   margin-left: -70px;
+}
+
+.container {
+	background-color: #ffffff;
+	color: #333333;
+	text-align: center;
+
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container h1 {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+
+	color: #000000;
+}
+.container ul {
+	padding: 0;
+}
+.container p:first-child {
+	font-size: 14px;
+	line-height: 26px;
 }

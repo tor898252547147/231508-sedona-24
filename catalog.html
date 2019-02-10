@@ -72,12 +72,12 @@
 					<h2>Стоимость в сутки (р):</h2>
 					<div class="price-range">
 						<div class="price-from">
-							<label id="price-from" for="price-from">От</label>
-							<input type="text" aria-labelledby="price-from" name="cost-min" value="0">
+							<label for="price-from">От</label>
+							<input type="text" id="price-from" name="cost-min" value="0">
 						</div>
 						<div class="price-to">
-							<label id="price-to" for="price-to">До</label>
-							<input type="text" aria-labelledby="price-to" name="cost-max" value="3000">
+							<label for="price-to">До</label>
+							<input type="text" id="price-to" name="cost-max" value="3000">
 						</div>
 					</div>
 					<div class="range-controls">
@@ -85,10 +85,10 @@
 							<div class="bar"></div>
 						</div>
 						<div class="range-toggle range-toggle-min">
-							<img src="img/filter-button.svg" width="20" height="22" alt="минимальная мтоимость">
+							<img src="img/filter-button.svg" width="20" height="22" alt="от">
 						</div>
 						<div class="range-toggle range-toggle-max">
-							<img src="img/filter-button.svg" width="20" height="22" alt="максимальная стоимость">
+							<img src="img/filter-button.svg" width="20" height="22" alt="до">
 						</div>
 					</div>
 					<button class="submit-button" type="submit">Показать</button>
