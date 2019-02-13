@@ -26,6 +26,7 @@ img {
 
 ul {
   list-style: none;
+      display: flex;
 }
 
 h2 {
@@ -50,6 +51,15 @@ h2 {
 
 .main-nav a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  min-height: 56px;
+}
+.menu li{
+  margin: auto;
 }
 
 .interesting span {
@@ -129,10 +139,79 @@ h2 {
 
 	color: #000000;
 }
+
 .container ul {
 	padding: 0;
 }
+
 .container p:first-child {
 	font-size: 14px;
 	line-height: 26px;
+}
+
+/* настоящий городок / мост  */
+
+.features,
+.bridge{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+.intro img,
+.feature-img img,
+.bridge-img img,
+.map img{
+  display: block;
+}
+
+.feature-text,
+.bridge-text{
+  margin: auto;
+}
+
+.number{
+  padding:25px 0;
+}
+
+.bridge h2,
+.bridge p{
+  color: #ffffff;;
+  line-height: 21px;
+}
+
+.features h2,
+.features p{
+  color: #ffffff;;
+  line-height: 21px;
+}
+
+/*блоки особенности*/
+.features-items{
+  display: flex;
+  align-items: center;
+  min-height: 333px;
+}
+
+.feature-items{
+  flex-grow: 1;
+}
+
+.feature-items h3{
+  padding: 25px 0;
+}
+
+.services{
+  background-color: #ffffff;
+}
+
+.feature-items{
+  text-align: center;;
+}
+
+.features-info{
+  background-color: #eeeeee;
+  text-align: center;
 }
