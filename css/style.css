@@ -27,11 +27,20 @@ img {
 ul {
   list-style: none;
       display: flex;
+    padding: 0; /* убираем отступы у Ul и LI */
+    margin: 0; /* убираем поля */
+
 }
 
 h2 {
   font-size: 21px;
   font-weight: bold;
+}
+
+.main-header{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .main-nav {
@@ -83,12 +92,7 @@ h2 {
   color: #333333;
 }
 
-.feature-text {
-  font-size: 21px;
-  font-weight: bold;
-  background-color: #81b3d2;
-  color: #ffffff;
-}
+
 
 .map {
     background-color: #f2f2f2;
@@ -106,6 +110,7 @@ h2 {
 
 .share ul {
   list-style: none;
+   padding: 0;
 }
 
 .header-background {
@@ -120,6 +125,18 @@ h2 {
   left: 50%;
   z-index: 2;
   margin-left: -70px;
+}
+.intro-text {
+  position: absolute;
+  z-index: 2;
+      margin-top: 70px;
+       margin-left: 370px;
+}
+
+.intro-text2 {
+  position: absolute;
+  z-index: 2;
+    margin-top: 731px;
 }
 
 .container {
@@ -168,7 +185,11 @@ h2 {
 }
 
 .feature-text,
-.bridge-text{
+.bridge-text {
+  font-size: 21px;
+  font-weight: bold;
+  background-color: #81b3d2;
+  color: #ffffff;
   margin: auto;
 }
 
@@ -214,4 +235,99 @@ h2 {
 .features-info{
   background-color: #eeeeee;
   text-align: center;
+}
+/********** Footer **************/
+.home-footer{
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  min-height: 120px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.8);
+}
+.visitsedona,
+.share,
+.copyright-logo{
+  display: flex;
+  flex-grow: 1;
+}
+.visitsedona{
+  margin-left: 134px;
+}
+.share{
+  justify-content: center;
+}
+.copyright-logo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+.share-list{
+  display: flex;
+  align-items: center;
+}
+
+li.soc-item a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+  width: 47px;
+  height: 47px;
+  background-color: #81b3d2;
+}
+li.soc-item:last-child{
+  margin-right: 0;
+}
+li.soc-item a:hover{
+  background-color: #669ec0;
+}
+li.soc-item a:focus{
+  background-color: #5496bd;
+}
+.copyright-logo p{
+  margin: 0;
+  padding-right: 8px;
+}
+.copyright-logo a{
+  height: 41px;
+}
+/*****заинтересовались***/
+.interested{
+  background-color: #ffffff;
+  text-align: center;
+}
+.interested h2{
+  font-size: 30px;
+  line-height: 36px;
+  padding-top: 50px;
+}
+.interested p{
+  font-size: 14px;
+  line-height: 24px;
+  padding: 30px 0 50px;
+}
+.sinteresting-form{
+  display: inline-block;
+  text-decoration: none;
+  background-color: #766357;
+  padding: 35px 140px;
+}
+.sinteresting-form:hover{
+  background-color: #604e43;
+}
+.sinteresting-form:focus{
+  background-color: #503e33;
+  color: #857871;
+}
+.sinteresting-form h2{
+  font-size: 21px;
+  line-height: 24px;
+  color: #eee;
+  text-transform: uppercase; 
+}
+
+.visually-hidden{
+  display: none;
 }
