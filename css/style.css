@@ -8,7 +8,13 @@ body {
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 	background-position: top center;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+
+.body {
+  width: 1280px;
+  margin: auto;
+  box-shadow: 0 0 10px 10px rgba(221, 221, 221, 1); 
 }
 
 a {
@@ -38,7 +44,7 @@ h2 {
 }
 
 .main-header{
-  width: 1200px;
+  width: 1280px;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -92,10 +98,9 @@ h2 {
   color: #333333;
 }
 
-
-
 .map {
     background-color: #f2f2f2;
+      position: absolute;
 }
 
 .home-footer {
@@ -115,8 +120,8 @@ h2 {
 
 .header-background {
   background: #c0d6e4 url('../img/background-photo.png') no-repeat center;
-  width: 100%;
-  height: 788px;
+  width: 1280px;
+  height: 518px;
   background-size: cover;
 }
 
@@ -124,19 +129,22 @@ h2 {
   position: absolute;
   left: 50%;
   z-index: 2;
-  margin-left: -70px;
+  /*margin-left: -70px;*/
+  transform: translateX(-70px);
+        margin-top: -28px;
 }
 .intro-text {
   position: absolute;
   z-index: 2;
-      margin-top: 70px;
-       margin-left: 370px;
+      margin-top: 75px;
+       margin-left: 450px;
 }
 
 .intro-text2 {
   position: absolute;
   z-index: 2;
-    margin-top: 731px;
+    margin-top: 458px;
+      width: 1280px;
 }
 
 .container {
@@ -144,7 +152,7 @@ h2 {
 	color: #333333;
 	text-align: center;
 
-	width: 1200px;
+	width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -182,6 +190,8 @@ h2 {
 .bridge-img img,
 .map img{
   display: block;
+
+  /*position: relative;*/
 }
 
 .feature-text,
@@ -240,10 +250,13 @@ h2 {
 .home-footer{
   display: flex;
   align-items: center;
-  width: 1200px;
+  width: 1280px;
   min-height: 120px;
   margin: 0 auto;
   background-color: rgba(255,255,255,0.8);
+  opacity: 0.7;
+  position: relative;
+        margin-top: 520px;
 }
 .visitsedona,
 .share,
@@ -256,6 +269,7 @@ h2 {
 }
 .share{
   justify-content: center;
+  margin-left: 250px;
 }
 .copyright-logo{
   display: flex;
@@ -293,6 +307,9 @@ li.soc-item a:focus{
 .copyright-logo a{
   height: 41px;
 }
+.copy-logo a:focus{
+    background-color: #5496bd;
+}
 /*****заинтересовались***/
 .interested{
   background-color: #ffffff;
@@ -329,5 +346,9 @@ li.soc-item a:focus{
 }
 
 .visually-hidden{
+  display: none;
+}
+
+.form-search{
   display: none;
 }
