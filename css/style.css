@@ -9,10 +9,11 @@ body {
 	background-color: #f2f2f2;
 	background-position: top center;
   background-repeat: no-repeat;
+
 }
 
 .body {
-  width: 1280px;
+  width: 1200px;
   margin: auto;
   box-shadow: 0 0 10px 10px rgba(221, 221, 221, 1); 
 }
@@ -32,10 +33,9 @@ img {
 
 ul {
   list-style: none;
-      display: flex;
     padding: 0; /* убираем отступы у Ul и LI */
     margin: 0; /* убираем поля */
-
+vertical-align: middle;
 }
 
 h2 {
@@ -44,7 +44,7 @@ h2 {
 }
 
 .main-header{
-  width: 1280px;
+  width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -120,7 +120,7 @@ h2 {
 
 .header-background {
   background: #c0d6e4 url('../img/background-photo.png') no-repeat center;
-  width: 1280px;
+  width: 1200px;
   height: 518px;
   background-size: cover;
 }
@@ -143,8 +143,8 @@ h2 {
 .intro-text2 {
   position: absolute;
   z-index: 2;
-    margin-top: 458px;
-      width: 1280px;
+    margin-top: 462px;
+     min-width: 1200px;
 }
 
 .container {
@@ -152,7 +152,7 @@ h2 {
 	color: #333333;
 	text-align: center;
 
-	width: 1280px;
+	min-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -250,13 +250,14 @@ h2 {
 .home-footer{
   display: flex;
   align-items: center;
-  width: 1280px;
+  width: 1200px;
   min-height: 120px;
   margin: 0 auto;
   background-color: rgba(255,255,255,0.8);
   opacity: 0.7;
   position: relative;
-        margin-top: 520px;
+       /* margin-top: 520px;*/
+        margin-bottom: 50px;
 }
 .visitsedona,
 .share,
@@ -307,8 +308,11 @@ li.soc-item a:focus{
 .copyright-logo a{
   height: 41px;
 }
-.copy-logo a:focus{
-    background-color: #5496bd;
+div.copyright-logo a:focus{
+    color: #5496bd;
+}
+div.copyright-logo a:hover{
+ color: #669ec0;
 }
 /*****заинтересовались***/
 .interested{
@@ -351,4 +355,179 @@ li.soc-item a:focus{
 
 .form-search{
   display: none;
+}
+
+/*--- catalog----*/
+.result {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+
+}
+.result h2{
+  padding: 30px 50px 30px 70px;
+}
+
+.up-down-sort{
+  display: flex;
+  margin-left: auto;
+  margin-right: 73px;
+}
+.up-down-sort a{
+  padding-right: 10px;
+}
+.result-list {
+  display: flex;
+  align-items: center;
+}
+.result-list li{
+  padding-right: 33px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+.result-list li:first-child{
+  padding-right: 40px;
+}
+
+.result-list a{
+  text-decoration: none;
+  color: #999999;
+  border-bottom: 1px dotted #81b3d2;
+}
+.result-list a.active-sort{
+  border-bottom: none;
+  color: #81b3d2;
+}
+/*****результат******/
+.result-item{
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+ /* margin-left: 114px;*/
+}
+.result-item > img{
+  padding: 30px 30px 30px 73px;
+}
+}
+.result-item h2{
+  line-height: 26px;
+}
+.result-item span{
+  line-height: 21px;
+}
+.result-info div{
+  display: flex;
+  padding: 5px 0 10px;
+}
+.result-info h2{
+ padding: 0;
+ margin: 0;
+ text-align: left;
+}
+
+
+.info-btn{
+  padding: 8px 17px;
+  background-color: #81b3d2;
+}
+.info-btn:hover{
+  background-color: #669ec0;
+}
+.info-btn:focus{
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+.book-btn{
+  padding: 8px 17px;
+  background-color: #766357;
+}
+.book-btn:hover{
+  background-color: #604e43;
+}
+.book-btn:focus{
+  background-color: #503e33;
+  color: #857871;
+}
+.info-btn,
+.book-btn{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+.result-rating{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: 73px;
+}
+.stars{
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.mark{
+  display: inline-block;
+  padding: 7px 15px;
+  background-color: #f2f2f2;
+  color: #666666;
+}
+/*********** Инфраструктура ************/
+.selection{
+  
+  background: url("../img/filter-background.jpg") no-repeat center;
+}
+.selection-form{
+  width: 1200px;
+  min-height: 219px;
+  display: flex;
+  justify-content: space-between;
+}
+.selection-form .infrastructure {
+  text-align: left;
+  padding-top: 15px;
+  margin-left: 73px;
+}
+
+
+.selection-form h2,
+.price h2{
+  padding-top: 20x;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+.selection-form label{
+  color: #ffffff;
+  padding-left: 17px;
+}
+.selection-list-1 li {
+  padding-top: 15px;
+}
+
+.price{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 73px;
+  color: #ffffff;
+}
+.submit-button{
+  width: 137px;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.price .submit-button{
+  margin-left: auto;
+  margin-right: auto;
 }
