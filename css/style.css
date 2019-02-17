@@ -100,11 +100,13 @@ h2 {
 
 .map {
     background-color: #f2f2f2;
-      position: absolute;
+      /*position: absolute;*/
 }
 
 .home-footer {
   background-color: rgba(255, 255, 255, 0.9);
+  position: absolute; 
+  bottom: 0px;
 }
 
 .home-footer span {
@@ -308,10 +310,10 @@ li.soc-item a:focus{
 .copyright-logo a{
   height: 41px;
 }
-div.copyright-logo a:focus{
+div.copy-logo a:focus{
     color: #5496bd;
 }
-div.copyright-logo a:hover{
+div.copy-logo a:hover{
  color: #669ec0;
 }
 /*****заинтересовались***/
