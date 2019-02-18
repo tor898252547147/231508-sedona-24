@@ -39,11 +39,12 @@ vertical-align: middle;
 }
 
 h2 {
-  font-size: 21px;
+  font-size: 14px;
   font-weight: bold;
 }
 
 .main-header{
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -77,6 +78,10 @@ h2 {
   margin: auto;
 }
 
+.menu-mini:nth-child(2) {
+    margin-right: 250px; 
+   } 
+
 .interesting span {
   font-size: 30px;
   line-height: 36px;
@@ -86,7 +91,7 @@ h2 {
 .header-title {
   text-align: center;
   line-height: 26px;
-  font-size: 21px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -110,7 +115,7 @@ h2 {
 }
 
 .home-footer span {
-  font-size: 21px;
+  font-size: 14px;
   line-height: 26px;
   font-weight: bold;
 }
@@ -133,7 +138,7 @@ h2 {
   z-index: 2;
   /*margin-left: -70px;*/
   transform: translateX(-70px);
-        margin-top: -28px;
+        margin-top: -55px;
 }
 .intro-text {
   position: absolute;
@@ -160,7 +165,7 @@ h2 {
 }
 
 .container h1 {
-	font-size: 21px;
+	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
 
@@ -198,7 +203,7 @@ h2 {
 
 .feature-text,
 .bridge-text {
-  font-size: 21px;
+  font-size: 14px;
   font-weight: bold;
   background-color: #81b3d2;
   color: #ffffff;
@@ -257,10 +262,18 @@ h2 {
   margin: 0 auto;
   background-color: rgba(255,255,255,0.8);
   opacity: 0.7;
-  position: relative;
-       /* margin-top: 520px;*/
-        margin-bottom: 50px;
 }
+.home-footer-catalog{
+    position: absolute; 
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  min-height: 120px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.8);
+
+}
+
 .visitsedona,
 .share,
 .copyright-logo{
@@ -345,7 +358,7 @@ div.copy-logo a:hover{
   color: #857871;
 }
 .sinteresting-form h2{
-  font-size: 21px;
+  font-size: 14px;
   line-height: 24px;
   color: #eee;
   text-transform: uppercase; 
