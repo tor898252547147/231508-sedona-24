@@ -22,10 +22,7 @@ a {
 	text-decoration: none;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-}
+
 
 .calendar{
 	background-image: url('img/calendar.svg') no-repeat 50% 50%;  
@@ -79,7 +76,10 @@ h2 {
 }
 
 .menu-mini:nth-child(2) {
-    margin-right: 250px; 
+    margin-right: 315px; 
+   } 
+   .menu-mini:nth-child(3) {
+    margin-right: 93px; 
    } 
 
 .interesting span {
@@ -91,7 +91,7 @@ h2 {
 .header-title {
   text-align: center;
   line-height: 26px;
-  font-size: 14px;
+  font-size: 21px;
   font-weight: bold;
 }
 
@@ -128,8 +128,13 @@ h2 {
 .header-background {
   background: #c0d6e4 url('../img/background-photo.png') no-repeat center;
   width: 1200px;
-  height: 518px;
+  height: 643px;
   background-size: cover;
+}
+.intro{
+ width: 1200px;
+  height: 643px;
+
 }
 
 .logo {
@@ -138,20 +143,34 @@ h2 {
   z-index: 2;
   /*margin-left: -70px;*/
   transform: translateX(-70px);
-        margin-top: -55px;
+        margin-top: -56px;
 }
 .intro-text {
   position: absolute;
   z-index: 2;
       margin-top: 75px;
-       margin-left: 450px;
+       margin-left: 370px;
 }
 
 .intro-text2 {
   position: absolute;
   z-index: 2;
-    margin-top: 462px;
+    margin-top: 452px;
      min-width: 1200px;
+}
+
+.feature-text{
+  text-align: center;
+  padding: 33px 30px 0;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+  width: 400px;
+}
+
+.main-info{
+  background-color: #fff;
+  padding-top: -50px;
 }
 
 .container {
@@ -209,6 +228,15 @@ h2 {
   color: #ffffff;
   margin: auto;
 }
+.feature-text h2,
+.bridge-text h2{
+  font-size: 21px;
+  font-weight: bold;
+  background-color: #81b3d2;
+  color: #ffffff;
+  margin: auto;
+    padding: 15px 0;
+}
 
 .number{
   padding:25px 0;
@@ -238,7 +266,8 @@ h2 {
 }
 
 .feature-items h3{
-  padding: 25px 0;
+  padding: 1px 0;
+     font-size: 21px;
 }
 
 .services{
@@ -258,7 +287,7 @@ h2 {
   display: flex;
   align-items: center;
   width: 1200px;
-  min-height: 120px;
+  min-height: 118px;
   margin: 0 auto;
   background-color: rgba(255,255,255,0.8);
   opacity: 0.7;
@@ -281,11 +310,13 @@ h2 {
   flex-grow: 1;
 }
 .visitsedona{
-  margin-left: 134px;
+    font-size: 21px;
+  margin-left: 150px;
+
 }
 .share{
   justify-content: center;
-  margin-left: 250px;
+  margin-left: 210px;
 }
 .copyright-logo{
   display: flex;
@@ -323,11 +354,14 @@ li.soc-item a:focus{
 .copyright-logo a{
   height: 41px;
 }
-div.copy-logo a:focus{
-    color: #5496bd;
+
+.copy-logo:hover path,
+.copy-logo:focus path{
+  fill: #81b3d2;
 }
-div.copy-logo a:hover{
- color: #669ec0;
+
+.copy-logo:active path{
+  fill: #bdbbbc;
 }
 /*****заинтересовались***/
 .interested{
@@ -338,7 +372,9 @@ div.copy-logo a:hover{
   font-size: 30px;
   line-height: 36px;
   padding-top: 50px;
+
 }
+
 .interested p{
   font-size: 14px;
   line-height: 24px;
@@ -348,7 +384,9 @@ div.copy-logo a:hover{
   display: inline-block;
   text-decoration: none;
   background-color: #766357;
-  padding: 35px 140px;
+  padding: 15px 100px;
+    width: 570px;
+    height:86px;
 }
 .sinteresting-form:hover{
   background-color: #604e43;
@@ -358,8 +396,8 @@ div.copy-logo a:hover{
   color: #857871;
 }
 .sinteresting-form h2{
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 21px;
   color: #eee;
   text-transform: uppercase; 
 }
@@ -538,7 +576,7 @@ div.copy-logo a:hover{
   padding: 10px;
   border-radius: 2px;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 21px;
   line-height: 21px;
   text-transform: uppercase;
 }
