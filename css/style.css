@@ -73,7 +73,6 @@ vertical-align: middle;
 .menu li{
   margin: auto;
 }
-
 .menu-mini:nth-child(2) {
     margin-right: 315px; 
    } 
@@ -81,6 +80,15 @@ vertical-align: middle;
     margin-right: 93px; 
    } 
 
+
+
+.menu-mini:nth-child(4n-1) {
+ text-align: right;
+}
+
+.menu-mini:nth-child(4n) {
+ text-align: right;
+}
 .interesting {
 height: 170px;
 margin: 60px;
@@ -461,7 +469,273 @@ li.soc-item a:focus{
 }
 
 .form-search{
-  display: none;
+  width: 568px;
+  height: 395px;
+  -webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+          box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  position: absolute;
+  display: block;
+
+  color: #000000;
+  background-color: #ffffff;
+
+  z-index: 1000;
+
+
+  left: 390px;
+}
+
+.search-form-invisible{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+      align-items: center;
+}
+
+.in-row {
+  position: relative;
+  margin: -25px;
+  padding: 0;
+  line-height: 26px;
+  margin-top: 55px;
+
+}
+label{
+  padding-right: 16px;
+}
+
+.date-in {
+  padding-right: 22px;
+}
+
+
+.calendar {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+}
+.calendar path {
+  fill: #cacaca;
+}
+
+.calendar:hover path,
+.calendar:focus path {
+  fill: #000000;
+}
+
+.calendar:active path {
+  fill: #81b3d2;
+}
+.date-out {
+  padding-right: 18px;
+}
+.booking-people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 54px;
+}
+
+.booking-people label {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.adults {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: 26px;
+}
+
+.adults input {
+  font: inherit;
+}
+
+.choice-adults {
+  padding-right: 40px;
+}
+.button-minus-adults:hover path,
+.button-minus-adults:focus path,
+.button-plus-child:hover path,
+.button-plus-child:focus path {
+  fill: #000000;
+}
+
+.button-minus-adults:active path,
+.button-plus-adults:active path {
+  fill: #81b3d2;
+}
+.button-minus-child {
+  padding: 0;
+  width: 38px;
+  height: 38px;
+        border: 0;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+.button-plus-child {
+  padding: 0;
+  width: 38px;
+  height: 38px;
+        border: 0;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.button-minus-adults {
+  padding: 0;
+  width: 38px;
+  height: 38px;
+      border: 0;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+.button-plus-adults {
+  padding: 0;
+  width: 38px;
+  height: 38px;
+        border: 0;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+.button-minus-adults path,
+.button-plus-adults path,
+.button-minus-child path,
+.button-plus-child path {
+  fill: #cacaca;
+}
+.booking-people .button-plus-adults {
+  margin-right: 53px;
+}
+.quantity {
+  -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  border: 0;
+  width: 38px;
+  height: 38px;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.quantity:hover {
+  background-color: #ebebeb;
+}
+
+.quantity:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  outline: none;
+}
+
+/*Правила для стилизации placeholder*/
+
+.departure-date::-webkit-input-placeholder,
+.arrival-date::-webkit-input-placeholder,
+.quantity::-webkit-input-placeholder { 
+  color: #000000;
+}
+
+.departure-date:-ms-input-placeholder,
+.arrival-date:-ms-input-placeholder,
+.quantity:-ms-input-placeholder { 
+  color: #000000;
+}
+
+.departure-date::-ms-input-placeholder,
+.arrival-date::-ms-input-placeholder,
+.quantity::-ms-input-placeholder { 
+  color: #000000;
+}
+
+.departure-date::placeholder,
+.arrival-date::placeholder,
+.quantity::placeholder { 
+  color: #000000;
+}
+
+.arrival-date,
+.departure-date {
+  -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  width: 349px;
+  height: 38px;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.arrival-date:hover,
+.departure-date:hover {
+  background-color: #ebebeb;
+}
+
+.arrival-date:focus,
+.departure-date:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  outline: none;
+}
+
+.arrival-date {
+  padding-left: 13px;
+}
+
+.departure-date {
+  padding-left: 13px;
+}
+.choice-child {
+  padding-right: 27px;
+}
+
+.find {
+  display: inline-block;  
+  padding-top: 16px;
+  padding-bottom: 16px;
+  min-width: 460px;
+  
+  text-align: center;
+  vertical-align: middle;
+  
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  
+  background-color: #81b3d2;
+  border: none;
+  cursor: pointer;
+}
+
+.find:hover {
+  background-color: #669ec0;
+}
+
+.find:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
 
 /*--- catalog----*/
