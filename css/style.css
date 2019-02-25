@@ -486,6 +486,14 @@ li.soc-item a:focus{
   left: 390px;
 }
 
+.modal-close {
+  display: none;
+  -webkit-animation-name: bounce;
+      animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+      animation-duration: 0.6s;
+}
+
 .search-form-invisible{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -911,4 +919,186 @@ label{
 .price .submit-button{
   margin-left: auto;
   margin-right: auto;
+}
+
+/*от до*/
+
+.catalog-filter-price {
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  display: flex;
+  padding: 0px 7px;
+  margin: 10px 0px 20px 0px;
+  position: relative;
+  height: 32px;
+}
+
+.catalog-filter-price::after {
+  content: "";
+  width: 2px;
+  height: 22px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 7px;
+}
+
+.catalog-filter-price label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #ffffff;
+  width: 73px;
+  padding-right: 2px;
+  text-align: right;
+}
+
+.catalog-filter-price input {
+  padding: 0;
+  font-size: 14px;
+  line-height: 32px;
+  color: #ffffff;
+  background-color: transparent;
+  width: 75px;
+  border-style: none;
+  vertical-align: middle;
+}
+
+.catalog-filter-price-slider {
+  width: 317px;
+  height: 2px;
+  background-color: rgba(255,255,255,0.3);
+  margin: 0;
+  position: relative;
+}
+
+.catalog-filter-price-slider::before {
+  content: "";
+  width: 255px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.catalog-filter-price-slider-min,
+.catalog-filter-price-slider-max{
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  box-shadow: 0 2px 0 0 rgba(255,255,255,0.3);
+  border-radius: 50%;
+  position: absolute;
+  top: -9px;
+}
+
+.catalog-filter-price-slider-min {
+  left: 0px;
+}
+
+.catalog-filter-price-slider-max {
+  left: 255px;
+}
+
+.catalog-filter-price-slider-min:hover,
+.catalog-filter-price-slider-min:focus,
+.catalog-filter-price-slider-max:hover,
+.catalog-filter-price-slider-max:focus {
+  border: 9px solid #ffffff;
+  box-shadow: 0 2px 0 0 rgba(255,255,255,0.3);
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  cursor: pointer;
+}
+
+.catalog-filter-price-slider-min,
+.catalog-filter-price-slider-max{
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  box-shadow: 0 2px 0 0 rgba(255,255,255,0.3);
+  border-radius: 50%;
+  position: absolute;
+  top: -9px;
+}
+
+.catalog-filter-price-slider-min {
+  left: 0px;
+}
+
+.catalog-filter-price-slider-max {
+  left: 255px;
+}
+
+.catalog-filter-price-slider-min:hover,
+.catalog-filter-price-slider-min:focus,
+.catalog-filter-price-slider-max:hover,
+.catalog-filter-price-slider-max:focus {
+  border: 9px solid #ffffff;
+  box-shadow: 0 2px 0 0 rgba(255,255,255,0.3);
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  cursor: pointer;
+}
+.filter-button {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  padding: 0px 35px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 32px;
+  min-width: 32px;
+  text-transform: uppercase;
+  margin: 30px auto 0px auto;
+}
+
+.filter-button:hover,
+.filter-button:focus{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+
+.catalog-filter-option label {
+  position: relative;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.catalog-filter-option label::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  width: 27px; 
+  height: 23px;
+  left: -40px;
+  z-index: 1;
+}
+
+.catalog-filter-option input[type="checkbox"]:disabled ~ label::before {
+  background-image: url("../img/checkbox-off-dis.svg");
+}
+
+.catalog-filter-option input[type="checkbox"]:checked:disabled ~ label::before {
+  background-image: url("../img/checkbox-on-dis.svg");
+}
+
+.catalog-filter-option input[type="checkbox"]:checked ~ label::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.catalog-filter-option input[type="checkbox"]:focus ~ label {
+  border-color: #663d15;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline: thin dotted;
 }

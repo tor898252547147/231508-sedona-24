@@ -40,16 +40,16 @@
 
 					<h2>Инфраструктура:</h2>
 					<ul class="selection-list-1">
-						<li>
-							<input type="checkbox" id="pool" name="pool" checked>
+						<li class="catalog-filter-option">
+							<input class="visually-hidden" type="checkbox" id="pool" name="pool" checked>
 							<label for="pool">Бассейн</label>
 						</li>
-						<li>
-							<input type="checkbox" id="parking" name="parking">
+						<li class="catalog-filter-option">
+							<input class="visually-hidden" type="checkbox" id="parking" name="parking">
 							<label for="parking">Парковка</label>
 						</li>
-						<li>
-							<input type="checkbox" id="wi-fi" name="wi-fi">
+						<li class="catalog-filter-option">
+							<input class="visually-hidden" type="checkbox" id="wi-fi" name="wi-fi">
 							<label for="wifi">WI-FI</label>
 						</li>
 					</ul>
@@ -58,23 +58,23 @@
 				<div class="infrastructure">
 					<h2>Тип жилья:</h2>
 					<ul class="selection-list-1">
-						<li>
-							<input type="checkbox" id="hotel" name="hotel" checked>
+						<li class="catalog-filter-option">
+							<input class="visually-hidden" type="checkbox" id="hotel" name="hotel" checked>
 							<label for="hotel">Гостиница</label>
 						</li>
-						<li>
-							<input type="checkbox" id="motel" name="motel" checked>
+						<li class="catalog-filter-option">
+							<input class="visually-hidden" type="checkbox" id="motel" name="motel" checked>
 							<label for="motel">Мотель</label>
 						</li>
-						<li>
-							<input type="checkbox" id="aps" name="apartaments" checked>
+						<li class="catalog-filter-option">
+							<input class="visually-hidden" type="checkbox" id="aps" name="apartaments" checked>
 							<label for="aps">Апартаменты</label>
 						</li>
 					</ul>
 				</div>
 				<div class="price">
 					<h2>Стоимость в сутки (р):</h2>
-					<div class="price-range">
+					<!--<div class="price-range">
 						<div class="price-from">
 							<label for="price-from">От</label>
 							<input type="text" id="price-from" name="cost-min" value="0">
@@ -97,6 +97,23 @@
 					</div>
 					<button class="submit-button" type="submit">Показать</button>
 				</div>
+-->
+
+<div>
+
+							<div class="catalog-filter-price">
+								<label for="PriceMin">От</label>
+								<input type="text" name="PriceMin" id="PriceMin" value="0">
+								<label for="PriceMax">До</label>
+								<input type="text" name="PriceMax" id="PriceMax" value="3000">
+							</div>
+							<div class="catalog-filter-price-slider">
+								<div class="catalog-filter-price-slider-min"></div>
+								<div class="catalog-filter-price-slider-max"></div>
+							</div>
+							<button class="filter-button" type="submit">Показать</button>
+
+</div>
 
 			</form>
 
