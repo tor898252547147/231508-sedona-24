@@ -487,6 +487,10 @@ li.soc-item a:focus{
   text-transform: uppercase; 
 }
 
+.knopka{
+position: relative;
+}
+
 .visually-hidden{
   display: none;
 }
@@ -506,7 +510,7 @@ li.soc-item a:focus{
   z-index: 1000;
 
 
-  left: 390px;
+  left: 316px;
 }
 
 .modal-close {
