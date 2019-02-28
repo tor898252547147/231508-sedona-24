@@ -162,7 +162,7 @@ position: relative;
 }
 
 .header-background:after {
-  background-image: url(../ing/intro-mask.svg);
+  background-image: url('../img/intro-mask.svg');
   background-repeat:  no-repeat;
   position: absolute;
 z-index: 2;
@@ -237,14 +237,22 @@ bottom: 0;
 
 /* настоящий городок / мост  */
 
-.features,
+.features{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #81b3d2;
+  text-align: center;
+  margin-top: 50px;
+}
+
 .bridge{
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #81b3d2;
   text-align: center;
-  margin-top: 46px;
+  margin-top: 39px;
 }
 
 .intro img,
@@ -268,7 +276,7 @@ bottom: 0;
   font-weight: bold;
   background-color: #81b3d2;
   color: #ffffff;
-margin-top: -30px;
+margin-top: -40px;
     padding: 3px 100px;
 }
 
@@ -311,11 +319,16 @@ margin-top: -8px;
 .features-items{
   display: flex;
   align-items: center;
-  min-height: 333px;
+  min-height: 320px;
 }
 
 .feature-items{
   flex-grow: 1;
+    width: 400px;
+
+}
+.feature-items {
+  padding: 54px;
 }
 
 .feature-items h3{
@@ -323,18 +336,19 @@ margin-top: -8px;
      font-size: 21px;
 }
 
+.feature-items h2{
+  padding: 150px 0;
+     font-size: 21px;
+}
 .services{
   background-color: #ffffff;
-    padding-top: 3px;
-      height: 280px;
+    height: 290px;
+
 }
 
-.feature-items{
-  text-align: center;
-}
 .feature-items p{
 margin-top: -20px;
-    padding: 10px 0;
+    padding: 14px 0;
 }
 
 
@@ -360,7 +374,7 @@ margin-top: -30px;
 .features-info{
   background-color: #eeeeee;
   text-align: center;
-  height: 255px;
+  height: 250px;
 }
 
 .features-info h2{
@@ -484,7 +498,6 @@ li.soc-item a:focus{
   font-size: 21px;
   line-height: 21px;
   color: #eee;
-  text-transform: uppercase; 
 }
 
 .knopka{
