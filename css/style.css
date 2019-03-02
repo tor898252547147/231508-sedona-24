@@ -252,7 +252,7 @@ bottom: 0;
   justify-content: space-between;
   background-color: #81b3d2;
   text-align: center;
-  margin-top: 39px;
+  /*margin-top: 39px;*/
 }
 
 .intro img,
@@ -319,7 +319,7 @@ margin-top: -8px;
 .features-items{
   display: flex;
   align-items: center;
-  min-height: 320px;
+  min-height: 240px;
 }
 
 .feature-items{
@@ -328,11 +328,11 @@ margin-top: -8px;
 
 }
 .feature-items {
-  padding: 54px;
+  padding: 55px;
 }
 
 .feature-items h3{
-  padding: 1px 0;
+ /* padding: 1px 0;*/
      font-size: 21px;
 }
 
@@ -342,21 +342,21 @@ margin-top: -8px;
 }
 .services{
   background-color: #ffffff;
-    height: 290px;
+    min-height: 290px;
 
 }
 
 .feature-items p{
-margin-top: -20px;
-    padding: 14px 0;
+/*margin-top: -20px;*/
+  /*  padding: 14px 0;*/
 }
 
 
 .feature-items-bloc{
-  padding-bottom: 85px; 
-  margin: 50px;
-  padding: 0 50px;
-margin-top: -30px;
+ /* padding-bottom: 85px; 
+  margin: 50px;*/
+  padding: 0 90px;
+/*margin-top: -30px;*/
 }
 
 .feature-items-bloc h2{
@@ -365,10 +365,10 @@ margin-top: -30px;
   padding: 0 30px;
 }
 
-.feature-items-bloc p{
+/*.feature-items-bloc p{
 
   padding: 0 -30px;
-}
+}*/
 
 
 .features-info{
@@ -495,6 +495,7 @@ li.soc-item a:focus{
   color: #857871;
 }
 .sinteresting-form h2{
+  text-transform: uppercase;
   font-size: 21px;
   line-height: 21px;
   color: #eee;
@@ -521,10 +522,31 @@ position: relative;
   background-color: #ffffff;
 
   z-index: 1000;
-
+  animation: bounce 0.6s;
 
   left: 316px;
 }
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 
 .modal-close {
   display: none;
