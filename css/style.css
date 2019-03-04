@@ -90,8 +90,9 @@ vertical-align: middle;
  text-align: right;
 }
 .interesting {
-height: 170px;
-margin: 60px;
+min-height: 257px;
+padding-top: 42px;
+/*margin: 60px;*/
 }
 .interesting h2{
 font-size: 30px;
@@ -280,7 +281,6 @@ margin-top: -40px;
     padding: 3px 100px;
 }
 
-
 .bridge-text {
   font-size: 14px;
   font-weight: bold;
@@ -312,7 +312,7 @@ margin-top: -8px;
 .features h2,
 .features p{
   color: #ffffff;;
-  line-height: 21px;
+  line-height: 26px;
 }
 
 /*блоки особенности*/
@@ -328,7 +328,9 @@ margin-top: -8px;
 
 }
 .feature-items {
-  padding: 55px;
+  padding-top: 60px;
+  padding: 57px;
+padding-bottom: 68px;
 }
 
 .feature-items h3{
@@ -348,14 +350,16 @@ margin-top: -8px;
 
 .feature-items p{
 /*margin-top: -20px;*/
-  /*  padding: 14px 0;*/
+  /*  padding: 0 30px;*/
+  line-height: 21px;
 }
 
 
 .feature-items-bloc{
  /* padding-bottom: 85px; 
   margin: 50px;*/
-  padding: 0 90px;
+  padding: 0 70px;
+  width: 400px;
 /*margin-top: -30px;*/
 }
 
@@ -378,7 +382,7 @@ margin-top: -8px;
 }
 
 .features-info h2{
-  padding: 1px 0;
+  padding: 0 55px;
      font-size: 21px;
 }
 /********** Footer **************/
@@ -484,8 +488,8 @@ li.soc-item a:focus{
   background-color: #766357;
   padding: 15px 100px;
     width: 570px;
-    height:86px;
-    margin: 25px;
+     height:86px;
+   margin-top: 30px;
 }
 .sinteresting-form:hover{
   background-color: #604e43;
@@ -545,6 +549,7 @@ position: relative;
     transform: translateY(0);
   }
 }
+
 
 
 
