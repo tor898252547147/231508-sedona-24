@@ -91,7 +91,7 @@ vertical-align: middle;
 }
 .interesting {
 min-height: 257px;
-padding-top: 42px;
+padding-top: 35px;
 /*margin: 60px;*/
 }
 .interesting h2{
@@ -197,7 +197,7 @@ bottom: 0;
 
 .feature-text{
   text-align: center;
-  padding: 33px 30px 0;
+  /*padding: 33px 30px 0;*/
   color: #ffffff;
 
   background-color: #81b3d2;
@@ -271,14 +271,15 @@ bottom: 0;
   background-color: #81b3d2;
   color: #ffffff;
   margin: auto;
+  padding: 30px;
 }
 .feature-text h2{
   font-size: 21px;
   font-weight: bold;
   background-color: #81b3d2;
   color: #ffffff;
-margin-top: -40px;
-    padding: 3px 100px;
+/*margin-top: -40px;
+    padding: 3px 100px;*/
 }
 
 .bridge-text {
@@ -295,7 +296,7 @@ margin-top: -40px;
   font-weight: bold;
   background-color: #81b3d2;
   color: #ffffff;
-margin-top: -8px;
+/*margin-top: -8px;*/
     padding: 8px 100px;
 }
 
@@ -303,16 +304,29 @@ margin-top: -8px;
   padding:25px 0;
 }
 
-.bridge h2,
-.bridge p{
-  color: #ffffff;;
+.bridge h2{
+  color: #ffffff;
   line-height: 21px;
 }
 
-.features h2,
+.bridge p{
+  color: #ffffff;
+  line-height: 21px;
+  padding-bottom: 26px;
+}
+
+.features h2{
+  color: #ffffff;;
+  line-height: 21px;
+  padding: 1px 62px;
+
+}
+
+
 .features p{
   color: #ffffff;;
-  line-height: 26px;
+  line-height: 21px;
+  padding: 9px 30px;
 }
 
 /*блоки особенности*/
@@ -330,7 +344,7 @@ margin-top: -8px;
 .feature-items {
   padding-top: 60px;
   padding: 57px;
-padding-bottom: 68px;
+padding-bottom: 63px;
 }
 
 .feature-items h3{
@@ -351,21 +365,21 @@ padding-bottom: 68px;
 .feature-items p{
 /*margin-top: -20px;*/
   /*  padding: 0 30px;*/
-  line-height: 21px;
+  line-height: 23px;
 }
 
 
 .feature-items-bloc{
  /* padding-bottom: 85px; 
   margin: 50px;*/
-  padding: 0 70px;
+  padding: 0 69px;
   width: 400px;
 /*margin-top: -30px;*/
 }
 
 .feature-items-bloc h2{
   padding-bottom: 85px; 
-  margin: 20px;
+  margin: 18px;
   padding: 0 30px;
 }
 
@@ -378,11 +392,11 @@ padding-bottom: 68px;
 .features-info{
   background-color: #eeeeee;
   text-align: center;
-  height: 250px;
+  height: 255px;
 }
 
 .features-info h2{
-  padding: 0 55px;
+  padding: 1px 55px;
      font-size: 21px;
 }
 /********** Footer **************/
@@ -529,6 +543,7 @@ position: relative;
   animation: bounce 0.6s;
 
   left: 316px;
+  
 }
 
 

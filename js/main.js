@@ -3,6 +3,7 @@ var popup = document.querySelector(".form-search");
 
 
 link.addEventListener("click", function (evt) {
+ evt.preventDefault();
 
     popup.classList.toggle("modal-close");
    
