@@ -70,7 +70,7 @@ ul {
 }
 .interesting {
   min-height: 257px;
-  padding-top: 33px;
+  padding-top: 31px;
 }
 .interesting h2{
   font-size: 30px;
@@ -264,7 +264,7 @@ padding: 0 50px;
 .feature-items {
   padding-top: 60px;
   padding: 57px;
-  padding-bottom: 63px;
+  padding-bottom: 61px;
 }
 .feature-items h3{
   font-size: 21px;
@@ -401,10 +401,10 @@ li.soc-item a:focus{
   background-color: #503e33;
   color: #857871;
 }
-.sinteresting-form h2{
+.sinteresting-form h3{
   text-transform: uppercase;
   font-size: 21px;
-  line-height: 21px;
+  line-height: 16px;
   color: #eee;
 }
 .button{
