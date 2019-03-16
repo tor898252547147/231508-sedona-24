@@ -669,7 +669,7 @@ label{
   border-bottom: 1px solid #e5e5e5;
 }
 .result h2{
-  padding: 30px 50px 30px 70px;
+  padding: 10px 50px 15px 70px;
 }
 .up-down-sort{
   display: flex;
@@ -677,7 +677,7 @@ label{
   margin-right: 73px;
 }
 .up-down-sort a{
-  padding-right: 10px;
+  padding-right: 2px;
 }
 .result-list {
   display: flex;
@@ -719,7 +719,7 @@ label{
 }
 .result-info div{
   display: flex;
-  padding: 5px 0 10px;
+  padding: 7px 0 17px;
 }
 .result-info h2{
   padding: 0;
@@ -727,7 +727,7 @@ label{
   text-align: left;
 }
 .info-btn{
-  padding: 8px 17px;
+  padding: 5px 17px;
   background-color: #81b3d2;
 }
 .info-btn:hover{
@@ -738,7 +738,7 @@ label{
   color: #88b6d1;
 }
 .book-btn{
-  padding: 8px 17px;
+  padding: 5px 18px;
   background-color: #766357;
 }
 .book-btn:hover{
@@ -768,7 +768,7 @@ label{
 }
 .mark{
   display: inline-block;
-  padding: 7px 15px;
+  padding: 3px 12px;
   background-color: #f2f2f2;
   color: #666666;
 }
@@ -783,12 +783,24 @@ label{
 }
 .selection-form .infrastructure {
   text-align: left;
-  padding-top: 15px;
-  margin-left: 73px;
+  padding-top: 18px;
+  padding-left: 74px
 }
-.selection-form h2,
+.selection-form .infrastructure-housing {
+  text-align: left;
+  padding-top: 19px;
+  padding-right: 208px;
+}
+.selection-form h2{
+  padding-top: 20x;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
 .price h2{
   padding-top: 20x;
+  padding-right: 130px;
   color: #ffffff;
   font-size: 16px;
   line-height: 21px;
@@ -796,16 +808,16 @@ label{
 }
 .selection-form label{
   color: #ffffff;
-  padding-left: 17px;
+  padding-left: 4px;
 }
 .selection-list-1 li {
-  padding-top: 15px;
+  padding-top: 16px;
 }
 .price{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 73px;
+  margin-right: 70px;
   color: #ffffff;
 }
 .submit-button{
@@ -827,8 +839,8 @@ label{
   border: 2px solid #ffffff;
   border-radius: 2px;
   display: flex;
-  padding: 0px 7px;
-  margin: 10px 0px 20px 0px;
+ /* padding: 0px 2px;*/
+  margin: 0px 0px 20px 0px;
   position: relative;
   height: 32px;
 }
@@ -916,7 +928,7 @@ label{
   line-height: 32px;
   min-width: 32px;
   text-transform: uppercase;
-  margin: 30px auto 0px auto;
+  margin: 30px auto 20px 84px;
 }
 .filter-button:hover,
 .filter-button:focus{
