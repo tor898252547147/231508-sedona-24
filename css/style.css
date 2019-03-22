@@ -21,12 +21,6 @@ a {
 .calendar{
   background-image: url('img/calendar.svg') no-repeat 50% 50%;  
 }
-ul {
-  list-style: none;
-  padding: 0; /* убираем отступы у Ul и LI */
-  margin: 0; /* убираем поля */
-  vertical-align: middle;
-}
 .main-header{
   position: relative;
   width: 1200px;
@@ -170,7 +164,10 @@ ul {
 }
 .share ul {
   list-style: none;
-  padding: 0;
+  list-style: none;
+  padding: 0; /* убираем отступы у Ul и LI */
+  margin: 0; /* убираем поля */
+  vertical-align: middle;
 }
 .header-background {
   background-color: lightblue;
@@ -237,7 +234,10 @@ ul {
   color: #000000;
 }
 .container ul {
-  padding: 0;
+  list-style: none;
+  padding: 0; /* убираем отступы у Ul и LI */
+  margin: 0; /* убираем поля */
+  vertical-align: middle;
 }
 .container p:first-child {
   font-size: 14px;
@@ -455,6 +455,7 @@ li.soc-item a:focus{
 }
 .sinteresting-form{
   display: inline-block;
+ /vertical-align: top;
   text-decoration: none;
   background-color: #766357;
   padding: 15px 100px;
@@ -844,7 +845,7 @@ label{
   color: #666666;
 }
 .selection{
-  background: url('../img/filter-background.jpg') no-repeat center;
+  background: #000000 url('../img/filter-background.jpg') no-repeat center;
 }
 .selection-form{
   width: 1200px;
@@ -910,13 +911,12 @@ label{
   border: 2px solid #ffffff;
   border-radius: 2px;
   display: flex;
- /* padding: 0px 2px;*/
   margin: 0px 0px 20px 0px;
   position: relative;
   height: 32px;
 }
-.catalog-filter-price::after {
-  content: "";
+.catalog-filter-price:after {
+  content: '';
   width: 2px;
   height: 22px;
   background-color: #ffffff;
@@ -953,7 +953,7 @@ label{
   position: relative;
 }
 .catalog-filter-price-slider::before {
-  content: "";
+  content: '';
   width: 255px;
   height: 2px;
   background-color: #ffffff;
@@ -1012,7 +1012,7 @@ label{
   margin-left: 40px;
 }
 .catalog-filter-option label::before {
-  content: "";
+  content: '';
   position: absolute;
   background-image: url('../img/checkbox-off.svg');
   background-repeat: no-repeat;
