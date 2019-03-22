@@ -1021,16 +1021,16 @@ label{
   left: -40px;
   z-index: 1;
 }
-.catalog-filter-option input[type="checkbox"]:disabled ~ label::before {
+.catalog-filter-option input[type='checkbox']:disabled ~ label::before {
   background-image: url('../img/checkbox-off-dis.svg');
 }
-.catalog-filter-option input[type="checkbox"]:checked:disabled ~ label::before {
+.catalog-filter-option input[type='checkbox']:checked:disabled ~ label::before {
   background-image: url('../img/checkbox-on-dis.svg');
 }
-.catalog-filter-option input[type="checkbox"]:checked ~ label::before {
+.catalog-filter-option input[type='checkbox']:checked ~ label::before {
   background-image: url('../img/checkbox-on.svg');
 }
-.catalog-filter-option input[type="checkbox"]:focus ~ label {
+.catalog-filter-option input[type='checkbox']:focus ~ label {
   border-color: #663d15;
   outline: 5px auto -webkit-focus-ring-color;
   outline: thin dotted;
