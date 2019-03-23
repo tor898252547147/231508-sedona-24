@@ -126,7 +126,7 @@ a {
 }
 .interesting {
   min-height: 257px;
-  padding-top: 30px;
+  padding-top: 44px;
 }
 .interesting h2{
   font-size: 30px;
@@ -249,7 +249,7 @@ a {
   justify-content: space-between;
   background-color: #81b3d2;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 48px;
 }
 .bridge{
   display: flex;
@@ -286,11 +286,12 @@ a {
   margin: auto;
 }
 .bridge-text h2{
-  font-size: 21px;
+  font-size: 22px;
   font-weight: bold;
   background-color: #81b3d2;
   color: #ffffff;
-  padding-bottom: 9px;
+  padding-bottom: 11px;
+  margin: 8px 0px;
 }
 .number{
   padding:25px 0;
@@ -303,22 +304,24 @@ a {
 .bridge p{
   color: #ffffff;
   line-height: 21px;
-  padding: 0 40px;
-  padding-bottom: 22px;
+  padding: 6px 40px;
+  padding-bottom: 9px;
   font-weight: normal;
 }
 .features h2{
   color: #ffffff;;
   line-height: 21px;
   padding: 0px 62px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
+  margin: 0px;
 }
 .features p{
   color: #ffffff;;
   line-height: 22px;
-  padding: 0px 30px;
-  padding-bottom: 10px;
+  padding: 17px 30px;
+  padding-bottom: 13px;
   font-weight: normal;
+  margin: 0px;
 }
 .features-items{
   display: flex;
@@ -328,9 +331,8 @@ a {
   width: 400px;
 }
 .feature-items {
-  padding-top: 60px;
-  padding: 57px;
-  padding-bottom: 64px;
+  padding: 58px 55px;
+  padding-bottom: 66px;
 }
 .feature-items h3{
   font-size: 21px;
@@ -349,21 +351,22 @@ a {
 .feature-items-bloc{
   padding: 25px 69px;
   width: 400px;
-  line-height: 26px;
+  line-height: 25px;
 }
 .feature-items-bloc h2{
   padding-bottom: 85px; 
-  margin: 17px;
   padding: 0 30px;
 }
-.features-info{
-  background-color: #eeeeee;
-  text-align: center;
-  min-height: 255px;
+.feature-items-bloc p{
+  padding-top: 0px;
+}
+.feature-items-bloc:nth-child(3) p {
+    padding: 5px 7px;
+    line-height: 21px;
 }
 .features-info h2{
-  padding: 1px 55px;
-  font-size: 21px;
+  padding: 2px 55px;
+  font-size: 20px;
 }
 .home-footer{
   display: flex;
@@ -394,14 +397,14 @@ a {
 }
 .share{
   justify-content: center;
-  margin-left: 182px;
-  padding: 40px 0;
+  margin-left: 153px;
+  padding: 35px 0;
 }
 .copyright-logo{
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  margin-right: 100px;
+  justify-content: center;
+  margin-left: 28px;
 }
 .share-list{
   display: flex;
@@ -461,7 +464,7 @@ li.soc-item a:focus{
   padding: 15px 100px;
   width: 570px;
   height:86px;
-  margin-top: 32px;
+  margin-top: 29px;
   text-transform: uppercase;
   font-size: 21px;
   color: #eee;
