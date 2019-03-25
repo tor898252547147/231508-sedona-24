@@ -537,7 +537,7 @@ li.soc-item a:focus{
   margin-top: 55px;
 }
 label{
-  padding-right: 16px;
+  padding-right: 22px;
   font-weight: bold;
 }
 .date-in {
@@ -741,6 +741,7 @@ label{
   align-items: center;
   background-color: #ffffff;
   border-bottom: 1px solid #e5e5e5;
+  padding-top: 1px;
 }
 .result h2{
   padding: 10px 50px 15px 70px;
@@ -760,7 +761,7 @@ label{
 .result-list li{
   padding-right: 33px;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 19px;
   color: #000000;
 }
 .result-list li:first-child{
@@ -840,6 +841,7 @@ label{
   display: flex;
   align-items: center;
   margin-bottom: 48px;
+  margin-right: 8px;
 }
 .mark{
   display: inline-block;
@@ -852,30 +854,31 @@ label{
 }
 .selection-form{
   width: 1200px;
-  min-height: 219px;
+  min-height: 217px;
   display: flex;
   justify-content: space-between;
 }
 .selection-form .infrastructure {
   text-align: left;
   padding-top: 18px;
-  padding-left: 74px
+  padding-left: 73px
 }
 .selection-form .infrastructure-housing {
   text-align: left;
-  padding-top: 19px;
-  padding-right: 208px;
+  padding-top: 17px;
+  padding-right: 210px;
 }
 .selection-form h2{
   padding-top: 20x;
   color: #ffffff;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 12px;
   font-weight: bold;
+  margin: 13px 0px 10px 0px;
 }
 .price h2{
   padding-top: 20x;
-  padding-right: 130px;
+  padding-right: 134px;
   color: #ffffff;
   font-size: 16px;
   line-height: 21px;
@@ -883,17 +886,29 @@ label{
 }
 .selection-form label{
   color: #ffffff;
-  padding-left: 4px;
+  padding-left: 0px;
+}
+.selection-list-1 {
+  margin: 0;
+  margin-top: 3px;
+  padding: 0;
+  list-style: none;
+  font-weight: normal;
 }
 .selection-list-1 li {
-  padding-top: 16px;
+  padding-top: 20px;
 }
 .price{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 70px;
+  margin-right: 71px;
   color: #ffffff;
+}
+.min-price {
+  width: 90px;
+  padding-left: 62px;
+  font-weight: normal;
 }
 .submit-button{
   width: 137px;
@@ -931,10 +946,10 @@ label{
   display: inline-block;
   vertical-align: middle;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 34px;
   font-weight: normal;
   color: #ffffff;
-  width: 73px;
+  width: 82px;
   padding-right: 2px;
   text-align: right;
 }
@@ -944,7 +959,7 @@ label{
   line-height: 32px;
   color: #ffffff;
   background-color: transparent;
-  width: 75px;
+  width: 64px;
   border-style: none;
   vertical-align: middle;
 }
@@ -990,19 +1005,19 @@ label{
   left: 0px;
 }
 .catalog-filter-price-slider-max {
-  left: 255px;
+  left: 252px;
 }
 .filter-button {
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  padding: 0px 35px;
+  padding: 0px 33px;
   color: #ffffff;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 33px;
   min-width: 32px;
   text-transform: uppercase;
-  margin: 30px auto 20px 84px;
+  margin: 30px auto 18px 84px;
 }
 .filter-button:hover,
 .filter-button:focus{
@@ -1013,6 +1028,9 @@ label{
   position: relative;
   cursor: pointer;
   margin-left: 40px;
+}
+.catalog-filter-option:nth-child(1) label {
+  margin-bottom: 5px;
 }
 .catalog-filter-option label::before {
   content: '';
@@ -1044,7 +1062,7 @@ label{
   text-align: left;
 }
 .sort-arrow-up {
-  margin-right: 12px;
+  margin-right: 8px;
   fill: #cacaca;
 }
 .sort-arrow-down {
@@ -1059,9 +1077,14 @@ label{
   fill: #81b3d2;
 }
 .searching-hotel {
-  margin-bottom: 10px;
-  color: #000000;
+  margin-bottom: 0px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+
 }
+
 .searching-hotel:hover {
   color: #81b3d2;
 }
